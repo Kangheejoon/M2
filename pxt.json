@@ -1,0 +1,23 @@
+{
+    "name": "HuaRobot_M2",
+    "version": "1.2.0",
+    "description": "Extension for Hua_M2",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.3.10",
+        "HuaRobot_M2_IR":  "github:HuaRobot/hua_microbit-ir"
+	
+
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/HuaRobot_M2-strings.json"
+
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
