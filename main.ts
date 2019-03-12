@@ -526,9 +526,9 @@ namespace HuaRobot_M2_小车类 {
         S1 = 3,
         S2 = 4,
         S3 = 5,
-		S4 = 9,
-		S5 = 10,
-		S6 = 11
+        S4 = 9,
+        S5 = 10,
+        S6 = 11
     }
     export enum CarState {
         //% blockId="Car_Run" block="前行"
@@ -617,8 +617,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, speed);
         setPwm(13, 0, 0);
 
-        setPwm(15, 0, speed);
-        setPwm(14, 0, 0);
+        setPwm(14, 0, speed);
+        setPwm(15, 0, 0);
         //pins.digitalWritePin(DigitalPin.P16, 1);
        // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
 
@@ -639,8 +639,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, 0);
         setPwm(13, 0, speed);
 
-        setPwm(15, 0, 0);
-        setPwm(14, 0, speed);
+        setPwm(14, 0, 0);
+        setPwm(15, 0, speed);
 
         //pins.digitalWritePin(DigitalPin.P16, 0);
         //pins.analogWritePin(AnalogPin.P1, speed); //速度控制
@@ -661,8 +661,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, 0);
         setPwm(13, 0, 0);
 
-        setPwm(15, 0, speed);
-        setPwm(14, 0, 0);
+        setPwm(14, 0, speed);
+        setPwm(15, 0, 0);
 
         //pins.analogWritePin(AnalogPin.P0, speed);
         //pins.digitalWritePin(DigitalPin.P8, 0);
@@ -683,8 +683,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, speed);
         setPwm(13, 0, 0);
 
-        setPwm(15, 0, 0);
         setPwm(14, 0, 0);
+        setPwm(15, 0, 0);
         //pins.digitalWritePin(DigitalPin.P0, 0);
         //pins.digitalWritePin(DigitalPin.P8, 0);
 
@@ -717,8 +717,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, 0);
         setPwm(13, 0, speed);
 
-        setPwm(15, 0, speed);
-        setPwm(14, 0, 0);
+        setPwm(14, 0, speed);
+        setPwm(15, 0, 0);
 
         //pins.analogWritePin(AnalogPin.P0, speed);
         //pins.digitalWritePin(DigitalPin.P8, 0);
@@ -739,8 +739,8 @@ namespace HuaRobot_M2_小车类 {
         setPwm(12, 0, speed);
         setPwm(13, 0, 0);
 
-        setPwm(15, 0, 0);
-        setPwm(14, 0, speed);
+        setPwm(14, 0, 0);
+        setPwm(15, 0, speed);
         //pins.analogWritePin(AnalogPin.P0, 1023-speed);
         //pins.digitalWritePin(DigitalPin.P8, 1);
 
@@ -850,7 +850,7 @@ namespace HuaRobot_M2_小车类 {
     }
 
 
-	//% blockId=M2_ultrasonic_car block="ultrasonic return distance(cm)"
+    //% blockId=M2_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
