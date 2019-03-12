@@ -914,7 +914,7 @@ namespace HuaRobot_M2_小车类 {
 
     }
 
-    //% blockId=M2_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=M2_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -923,34 +923,73 @@ namespace HuaRobot_M2_小车类 {
 
         let temp: boolean = false;
         //% pins.digitalWritePin(DigitalPin.P9, 0);
-        switch (value) {
-            case enAvoidState.OBSTACLE: {
-                if (pins.analogReadPin(AnalogPin.P3) < 800) {
-                
-                    temp = true;
-                    setPwm(8, 0, 0);
-                }
-                else {                 
-                    temp = false;
-                    setPwm(8, 0, 4095);
+
+        switch (direct) {
+            case enPos.LeftState: {
+                switch (value) {
+                    case enAvoidState.OBSTACLE: {
+                        if (pins.analogReadPin(AnalogPin.P3) < 800) {
+                        
+                            temp = true;
+                            setPwm(8, 0, 0);
+                        }
+                        else {                 
+                            temp = false;
+                            setPwm(8, 0, 4095);
+                        }
+                        break;
+                    }
+
+                    case enAvoidState.NOOBSTACLE: {
+                        if (pins.analogReadPin(AnalogPin.P3) > 800) {
+
+                            temp = true;
+                            setPwm(8, 0, 4095);
+                        }
+                        else {
+                            temp = false;
+                            setPwm(8, 0, 0);
+                        }
+                        break;
+                    }
                 }
                 break;
             }
+            case enPos.RightState: {
+                switch (value) {
+                    case enAvoidState.OBSTACLE: {
+                        if (pins.analogReadPin(AnalogPin.P9) < 800) {
+                        
+                            temp = true;
+                            setPwm(8, 0, 0);
+                        }
+                        else {                 
+                            temp = false;
+                            setPwm(8, 0, 4095);
+                        }
+                        break;
+                    }
 
-            case enAvoidState.NOOBSTACLE: {
-                if (pins.analogReadPin(AnalogPin.P9) > 800) {
+                    case enAvoidState.NOOBSTACLE: {
+                        if (pins.analogReadPin(AnalogPin.P9) > 800) {
 
-                    temp = true;
-                    setPwm(8, 0, 4095);
-                }
-                else {
-                    temp = false;
-                    setPwm(8, 0, 0);
+                            temp = true;
+                            setPwm(8, 0, 4095);
+                        }
+                        else {
+                            temp = false;
+                            setPwm(8, 0, 0);
+                        }
+                        break;
+                    }
                 }
                 break;
             }
         }
-        pins.digitalWritePin(DigitalPin.P9, 1);
+
+
+        
+        
         return temp;
 
     }
