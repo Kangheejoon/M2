@@ -919,7 +919,7 @@ namespace HuaRobot_M2_小车类 {
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
-    export function Avoid_Sensor(value: enAvoidState): boolean {
+    export function Avoid_Sensor(direct: enPos, value: enAvoidState): boolean {
 
         let temp: boolean = false;
         //% pins.digitalWritePin(DigitalPin.P9, 0);
