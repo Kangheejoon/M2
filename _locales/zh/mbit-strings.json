@@ -26,7 +26,7 @@
   "Hua_M2_小车类.RGB_Car_Program|block": "七彩流水灯",
   "Hua_M2_小车类.Music_Car|block": "小车音乐播放|%index",
   "Hua_M2_小车类.Line_Sensor|block": "巡线传感器|位置 %direct|检测到 %value",
-  "Hua_M2_小车类.Avoid_Sensor|block": "避障传感器|检测到 %value",
+  "Hua_M2_小车类.Avoid_Sensor|block": "避障传感器|位置 %direct|检测到 %value",
   "Hua_M2_小车类.Servo_Car|block": "小车舵机|编号 %num|角度 %value",
   "Hua_M2_小车类.CarCtrl|block": "小车控制|%index",
   "Hua_M2_小车类.CarCtrlSpeed|block": "小车控制|%index|速度 %speed"
