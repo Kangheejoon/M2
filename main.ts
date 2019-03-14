@@ -931,11 +931,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P3) < 800) {
                         
                             temp = true;
-                            setPwm(8, 0, 0);
+                            //setPwm(8, 0, 0);
                         }
                         else {                 
                             temp = false;
-                            setPwm(8, 0, 4095);
+                            //setPwm(8, 0, 4095);
                         }
                         break;
                     }
@@ -944,11 +944,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P3) > 800) {
 
                             temp = true;
-                            setPwm(8, 0, 4095);
+                            //setPwm(8, 0, 4095);
                         }
                         else {
                             temp = false;
-                            setPwm(8, 0, 0);
+                            //setPwm(8, 0, 0);
                         }
                         break;
                     }
@@ -961,11 +961,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P9) < 800) {
                         
                             temp = true;
-                            setPwm(8, 0, 0);
+                            //setPwm(8, 0, 0);
                         }
                         else {                 
                             temp = false;
-                            setPwm(8, 0, 4095);
+                            //setPwm(8, 0, 4095);
                         }
                         break;
                     }
@@ -974,11 +974,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P9) > 800) {
 
                             temp = true;
-                            setPwm(8, 0, 4095);
+                            //setPwm(8, 0, 4095);
                         }
                         else {
                             temp = false;
-                            setPwm(8, 0, 0);
+                            //setPwm(8, 0, 0);
                         }
                         break;
                     }
