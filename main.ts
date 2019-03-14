@@ -925,7 +925,7 @@ namespace HuaRobot_M2_小车类 {
     export function Avoid_Sensor(direct: enPos, value: enAvoidState): boolean {
 
         let temp: boolean = false;
-        //% pins.digitalWritePin(DigitalPin.P9, 0);
+        
 
         switch (direct) {
             case enPos.LeftState: {
@@ -934,11 +934,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P3) < 800) {
                         
                             temp = true;
-                            //setPwm(8, 0, 0);
+                            
                         }
                         else {                 
                             temp = false;
-                            //setPwm(8, 0, 4095);
+                            
                         }
                         break;
                     }
@@ -947,11 +947,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P3) > 800) {
 
                             temp = true;
-                            //setPwm(8, 0, 4095);
+                            
                         }
                         else {
                             temp = false;
-                            //setPwm(8, 0, 0);
+                            
                         }
                         break;
                     }
@@ -964,11 +964,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P9) < 800) {
                         
                             temp = true;
-                            //setPwm(8, 0, 0);
+                            
                         }
                         else {                 
                             temp = false;
-                            //setPwm(8, 0, 4095);
+                            
                         }
                         break;
                     }
@@ -977,11 +977,11 @@ namespace HuaRobot_M2_小车类 {
                         if (pins.analogReadPin(AnalogPin.P9) > 800) {
 
                             temp = true;
-                            //setPwm(8, 0, 4095);
+                            
                         }
                         else {
                             temp = false;
-                            //setPwm(8, 0, 0);
+                            
                         }
                         break;
                     }
