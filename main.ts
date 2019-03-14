@@ -526,9 +526,12 @@ namespace HuaRobot_M2_小车类 {
         S1 = 3,
         S2 = 4,
         S3 = 5,
-        S4 = 9,
-        S5 = 10,
-        S6 = 11
+        S4 = 6,
+        S5 = 7,
+        S6 = 8,
+        S7 = 9,
+        S8 = 10,
+        S9 = 11
     }
     export enum CarState {
         //% blockId="Car_Run" block="前行"
