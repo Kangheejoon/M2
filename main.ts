@@ -925,74 +925,40 @@ namespace HuaRobot_M2_小车类 {
     export function Avoid_Sensor(direct: enPos, value: enAvoidState): boolean {
 
         let temp: boolean = false;
-        
 
         switch (direct) {
             case enPos.LeftState: {
-                switch (value) {
-                    case enAvoidState.OBSTACLE: {
-                        if (pins.analogReadPin(AnalogPin.P3) < 800) {
-                        
-                            temp = true;
-                            
-                        }
-                        else {                 
-                            temp = false;
-                            
-                        }
-                        break;
+                if (pins.analogReadPin(AnalogPin.P3) < 500) {
+                    if (value == enAvoidState.OBSTACLE) {
+                        temp = true;
                     }
-
-                    case enAvoidState.NOOBSTACLE: {
-                        if (pins.analogReadPin(AnalogPin.P3) > 800) {
-
-                            temp = true;
-                            
-                        }
-                        else {
-                            temp = false;
-                            
-                        }
-                        break;
+                    setPwm(7, 0, 4095);
+                }
+                else {
+                    if (value == enAvoidState.NOOBSTACLE) {
+                        temp = true;
                     }
+                    setPwm(7, 0, 0);
                 }
                 break;
             }
+
             case enPos.RightState: {
-                switch (value) {
-                    case enAvoidState.OBSTACLE: {
-                        if (pins.analogReadPin(AnalogPin.P9) < 800) {
-                        
-                            temp = true;
-                            
-                        }
-                        else {                 
-                            temp = false;
-                            
-                        }
-                        break;
+                if (pins.analogReadPin(AnalogPin.P9) < 500) {
+                    if (value == enAvoidState.OBSTACLE) {
+                        temp = true;
                     }
-
-                    case enAvoidState.NOOBSTACLE: {
-                        if (pins.analogReadPin(AnalogPin.P9) > 800) {
-
-                            temp = true;
-                            
-                        }
-                        else {
-                            temp = false;
-                            
-                        }
-                        break;
+                    setPwm(6, 0, 4095);
+                }
+                else {
+                    if (value == enAvoidState.NOOBSTACLE) {
+                        temp = true;
                     }
+                    setPwm(6, 0, 0);
                 }
                 break;
             }
         }
-
-
-        
-        
         return temp;
 
     }
