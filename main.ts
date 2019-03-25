@@ -932,13 +932,13 @@ namespace HuaRobot_M2_小车类 {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
-                    setPwm(7, 0, 4095);
+                    //setPwm(7, 0, 4095);
                 }
                 else {
                     if (value == enAvoidState.NOOBSTACLE) {
                         temp = true;
                     }
-                    setPwm(7, 0, 0);
+                    //setPwm(7, 0, 0);
                 }
                 break;
             }
@@ -948,13 +948,13 @@ namespace HuaRobot_M2_小车类 {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
-                    setPwm(6, 0, 4095);
+                    //setPwm(6, 0, 4095);
                 }
                 else {
                     if (value == enAvoidState.NOOBSTACLE) {
                         temp = true;
                     }
-                    setPwm(6, 0, 0);
+                    //setPwm(6, 0, 0);
                 }
                 break;
             }
@@ -977,13 +977,13 @@ namespace HuaRobot_M2_小车类 {
                     if (value == enLineState.White) {
                         temp = true;
                     }
-                    setPwm(7, 0, 4095);
+                    //setPwm(7, 0, 4095);
                 }
                 else {
                     if (value == enLineState.Black) {
                         temp = true;
                     }
-                    setPwm(7, 0, 0);
+                    //setPwm(7, 0, 0);
                 }
                 break;
             }
@@ -993,13 +993,13 @@ namespace HuaRobot_M2_小车类 {
                     if (value == enLineState.White) {
                         temp = true;
                     }
-                    setPwm(6, 0, 4095);
+                    //setPwm(6, 0, 4095);
                 }
                 else {
                     if (value == enLineState.Black) {
                         temp = true;
                     }
-                    setPwm(6, 0, 0);
+                    //setPwm(6, 0, 0);
                 }
                 break;
             }
