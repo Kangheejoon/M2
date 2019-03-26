@@ -928,7 +928,7 @@ namespace HuaRobot_M2_小车类 {
 
         switch (direct) {
             case enPos.LeftState: {
-                if (pins.analogReadPin(AnalogPin.P3) < 500) {
+                if (pins.analogReadPin(AnalogPin.P12) < 500) {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
@@ -944,7 +944,7 @@ namespace HuaRobot_M2_小车类 {
             }
 
             case enPos.RightState: {
-                if (pins.analogReadPin(AnalogPin.P9) < 500) {
+                if (pins.analogReadPin(AnalogPin.P13) < 500) {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
