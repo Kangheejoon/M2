@@ -928,7 +928,7 @@ namespace HuaRobot_M2_小车类 {
 
         switch (direct) {
             case enPos.LeftState: {
-                if (pins.digitalReadPin(DigitalPin.P12) == 1 ) {
+                if (pins.digitalReadPin(DigitalPin.P12) == 0 ) {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
@@ -944,7 +944,7 @@ namespace HuaRobot_M2_小车类 {
             }
 
             case enPos.RightState: {
-                if (pins.digitalReadPin(DigitalPin.P13) == 1 ) {
+                if (pins.digitalReadPin(DigitalPin.P13) == 0 ) {
                     if (value == enAvoidState.OBSTACLE) {
                         temp = true;
                     }
