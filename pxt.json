@@ -1,10 +1,11 @@
 {
     "name": "HuaRobot_M2",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Extension for Hua_M2",
     "license": "MIT",
     "dependencies": {
         "core": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.6.9",
         "HuaRobot_M2_IR":  "github:HuaRobot/hua_microbit_M2-ir"
 	
 
