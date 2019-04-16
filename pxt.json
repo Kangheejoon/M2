@@ -1,6 +1,6 @@
 {
     "name": "HuaRobot_M2",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Extension for Hua_M2",
     "license": "MIT",
     "dependencies": {
