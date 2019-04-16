@@ -1,7 +1,7 @@
 {
     "name": "HuaRobot_M2",
     "version": "1.4.0",
-    "description": "Extension for Hua_M2",
+    "description": "Extension for Hua_M2 v1.4",
     "license": "MIT",
     "dependencies": {
         "core": "*",
