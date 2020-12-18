@@ -6,33 +6,33 @@ load dependency
 
 
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace HuaRobot_M2_显示类 {
+namespace HuaRobot_M2_클래스 표시 {
     
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="Red" block="红色"
+        //% blockId="Red" block="빨간색"
         Red,
-        //% blockId="Green" block="绿色"
+        //% blockId="Green" block="연두색"
         Green,
-        //% blockId="Blue" block="蓝色"
+        //% blockId="Blue" block="파란색"
         Blue,
-        //% blockId="White" block="白色"
+        //% blockId="White" block="흰색"
         White,
-        //% blockId="Cyan" block="青色"
+        //% blockId="Cyan" block="청색"
         Cyan,
-        //% blockId="Pinkish" block="品红"
+        //% blockId="Pinkish" block="담홍색"
         Pinkish,
-        //% blockId="Yellow" block="黄色"
+        //% blockId="Yellow" block="노란색"
         Yellow,
 
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="끄다"
         OFF = 0,
-        //% blockId="ON" block="亮"
+        //% blockId="ON" block="On"
         ON =1
     }
 
@@ -155,23 +155,23 @@ namespace HuaRobot_M2_显示类 {
    
 }
 /*****************************************************************************************************************************************
- *  传感器类 ***************************************************************************************************************************** 
+ *  센서클래스 ***************************************************************************************************************************** 
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace HuaRobot_M2_传感器类 {
+namespace HuaRobot_M2_센서클래스 {
 
     export enum enVoice {
-        //% blockId="Voice" block="有声音"
+        //% blockId="Voice" block="Voice"
         Voice = 0,
-        //% blockId="NoVoice" block="无声音"
+        //% blockId="NoVoice" block="No Voice"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="检测到"
+        //% blockId="Get" block="탐지"
         Get = 0,
-        //% blockId="NoVoice" block="未检测"
+        //% blockId="NoVoice" block="탐지안함"
         NoGet = 1
     }
     
@@ -253,37 +253,37 @@ namespace HuaRobot_M2_传感器类 {
 }
 
 /*****************************************************************************************************************************************
- *  输入类 *****************************************************************************************************************************
+ *  입력클래스 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace HuaRobot_M2_输入类 {
+namespace HuaRobot_M2_입력클래스 {
 
     export enum enRocker {
-        //% blockId="Nostate" block="无"
+        //% blockId="Nostate" block="없음"
         Nostate = 0,
-        //% blockId="Up" block="上"
+        //% blockId="Up" block="상"
         Up,
-        //% blockId="Down" block="下"
+        //% blockId="Down" block="하"
         Down,
-        //% blockId="Left" block="左"
+        //% blockId="Left" block="왼쪽"
         Left,
-        //% blockId="Right" block="右"
+        //% blockId="Right" block="오른쪽"
         Right,
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="내리누르기"
         Press
     }
 
     export enum enTouch {
-        //% blockId="NoTouch" block="未触摸"
+        //% blockId="NoTouch" block="미감지"
         NoTouch = 0,
-        //% blockId="Touch" block="触摸"
+        //% blockId="Touch" block="감지"
         Touch = 1
     }
     export enum enButton {
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="누르기"
         Press = 0,
-        //% blockId="Realse" block="松开"
+        //% blockId="Realse" block="풀기"
         Realse = 1
     }
 
@@ -316,7 +316,7 @@ namespace HuaRobot_M2_输入类 {
         let z = pins.digitalReadPin(pin3);
         let now_state = enRocker.Nostate;
 
-        if (x < 100) // 上
+        if (x < 100) // 상
         {
 
             now_state = enRocker.Up;
@@ -327,13 +327,13 @@ namespace HuaRobot_M2_输入类 {
 
             now_state = enRocker.Down;
         }
-        else  // 左右
+        else  // 좌우
         {
-            if (y < 100) //右
+            if (y < 100) //우
             {
                 now_state = enRocker.Right;
             }
-            else if (y > 700) //左
+            else if (y > 700) //좌
             {
                 now_state = enRocker.Left;
             }
@@ -366,16 +366,16 @@ namespace HuaRobot_M2_输入类 {
 }
 
 /*****************************************************************************************************************************************
- *    音乐类 *****************************************************************************************************************************
+ *   음악 카테고리 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace HuaRobot_M2_音乐类 {
+namespace HuaRobot_M2_음악 카테고리 {
     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="不响"
+        //% blockId="NoBeep" block="소리없음"
         NoBeep = 0,
-        //% blockId="Beep" block="响"
+        //% blockId="Beep" block="소리있음"
         Beep
     }
 
@@ -395,11 +395,11 @@ namespace HuaRobot_M2_音乐类 {
 }
 
 /*****************************************************************************************************************************************
- *    电机类 *****************************************************************************************************************************
+ *    모터클래스 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace HuaRobot_M2_电机类 {
+namespace HuaRobot_M2_모터클래스 {
 
     //% blockId=M2_Fan block="Fan|pin %pin|speed %value"
     //% weight=100
@@ -428,7 +428,7 @@ namespace HuaRobot_M2_电机类 {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace HuaRobot_M2_小车类 {
+namespace HuaRobot_M2_자동차 클래스 {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -454,21 +454,21 @@ namespace HuaRobot_M2_小车类 {
 
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="Red" block="红色"
+        //% blockId="Red" block="빨간색"
         Red,
-        //% blockId="Green" block="绿色"
+        //% blockId="Green" block="연두색"
         Green,
-        //% blockId="Blue" block="蓝色"
+        //% blockId="Blue" block="파랑색"
         Blue,
-        //% blockId="White" block="白色"
+        //% blockId="White" block="흰색"
         White,
-        //% blockId="Cyan" block="青色"
+        //% blockId="Cyan" block="청색"
         Cyan,
-        //% blockId="Pinkish" block="品红"
+        //% blockId="Pinkish" block="핑크색"
         Pinkish,
-        //% blockId="Yellow" block="黄色"
+        //% blockId="Yellow" block="노랑색"
         Yellow,
 
     }
@@ -498,24 +498,24 @@ namespace HuaRobot_M2_小车类 {
     }
     export enum enPos {
 
-        //% blockId="LeftState" block="左边状态"
+        //% blockId="LeftState" block="좌측 상태"
         LeftState = 0,
-        //% blockId="RightState" block="右边状态"
+        //% blockId="RightState" block="우측 상태"
         RightState = 1
     }
 
     export enum enLineState {
-        //% blockId="White" block="白线"
+        //% blockId="White" block="흰 선"
         White = 0,
-        //% blockId="Black" block="黑线"
+        //% blockId="Black" block="검은 선"
         Black = 1
 
     }
     
     export enum enAvoidState {
-        //% blockId="OBSTACLE" block="有障碍物"
+        //% blockId="OBSTACLE" block="장애물"
         OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="无障碍物"
+        //% blockId="NOOBSTACLE" block="장애물 없는"
         NOOBSTACLE = 1
 
     }
@@ -534,19 +534,19 @@ namespace HuaRobot_M2_小车类 {
         
     }
     export enum CarState {
-        //% blockId="Car_Run" block="前行"
+        //% blockId="Car_Run" block="전진"
         Car_Run = 1,
-        //% blockId="Car_Back" block="后退"
+        //% blockId="Car_Back" block="후진"
         Car_Back = 2,
-        //% blockId="Car_Left" block="左转"
+        //% blockId="Car_Left" block="왼쪽"
         Car_Left = 3,
-        //% blockId="Car_Right" block="右转"
+        //% blockId="Car_Right" block="오른쪽"
         Car_Right = 4,
-        //% blockId="Car_Stop" block="停止"
+        //% blockId="Car_Stop" block="정지"
         Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="原地左旋"
+        //% blockId="Car_SpinLeft" block="제자리 좌회전"
         Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="原地右旋"
+        //% blockId="Car_SpinRight" block="제자리 우회전"
         Car_SpinRight = 7
     }
 
@@ -623,9 +623,9 @@ namespace HuaRobot_M2_小车类 {
         setPwm(14, 0, speed);
         setPwm(15, 0, 0);
         //pins.digitalWritePin(DigitalPin.P16, 1);
-       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
+       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //스피드 컨트롤
 
-       // pins.analogWritePin(AnalogPin.P0, speed);//速度控制
+       // pins.analogWritePin(AnalogPin.P0, speed);//스피드 컨트
        // pins.digitalWritePin(DigitalPin.P8, 0);
     }
 
@@ -646,9 +646,9 @@ namespace HuaRobot_M2_小车类 {
         setPwm(15, 0, speed);
 
         //pins.digitalWritePin(DigitalPin.P16, 0);
-        //pins.analogWritePin(AnalogPin.P1, speed); //速度控制
+        //pins.analogWritePin(AnalogPin.P1, speed); //스피드 컨트롤
 
-        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//速度控制
+        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//스피드 컨트롤
         //pins.digitalWritePin(DigitalPin.P8, 1);
     }
 
