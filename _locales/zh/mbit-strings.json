@@ -1,33 +1,33 @@
 {
 
-  "Hua_M2_显示类.LED1|block": "LED灯|引脚 %pin|状态 %value",
-  "Hua_M2_显示类.LED2|block": "LED灯|引脚 %pin|亮度 %value",
-  "Hua_M2_显示类.BreathLED|block": "呼吸灯|引脚 %pin",
-  "Hua_M2_显示类.RGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3",
-  "Hua_M2_显示类.RGB2|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value",
+  "Hua_M2_표시.LED1|block": "LED램|프 %pin|상태 %value",
+  "Hua_M2_표시.LED2|block": "LED램|프 %pin|광도 %value",
+  "Hua_M2_표시.BreathLED|block": "호흡등|핀 %pin",
+  "Hua_M2_표시.RGB|block": "RGB화려한 불빛|핀R %pin1|핀G %pin2|핀B %pin3|빨간색 %value1|연두색 %value2|파란색 %value3",
+  "Hua_M2_표시.RGB2|block": "RGB화려한 불빛|핀R %pin1|핀G %pin2|핀B %pin3|표시 %value",
 
-  "Hua_M2_输入类.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
-  "Hua_M2_输入类.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
-  "Hua_M2_输入类.Button|block": "按键|引脚 %pin|返回 %value",
+  "Hua_M2_입력.TouchPad|block": "터치스위치|핀 %pin|반환 %value",
+  "Hua_M2_입력.Rocker|block": "원격레버|VRX %pin1|VRY %pin2|SW %pin3|반환 %value",
+  "Hua_M2_입력.Button|block": "버튼|핀 %pin|반환 %value",
 
-  "Hua_M2_传感器类.Voice_Sensor|block": "声音传感器|引脚 %pin|返回 %value",
-  "Hua_M2_传感器类.IR_Sensor|block": "红外传感器|引脚 %pin|  |%value|障碍物",
-  "Hua_M2_传感器类.IR_Send|block": "红外发射|引脚 %pin",
-  "Hua_M2_传感器类.Ultrasonic|block": "超声波|发射管脚 %Trig|接收管脚 %Echo",
+  "Hua_M2_센서.Voice_Sensor|block": "사운드 센서|핀 %pin|반환 %value",
+  "Hua_M2_센서.IR_Sensor|block": "적외선 센서|핀 %pin|  |%value|장애물",
+  "Hua_M2_센서.IR_Send|block": "적외선 방출|핀 %pin",
+  "Hua_M2_센서.Ultrasonic|block": "초음파|방출 핀 %Trig|핀 받기 %Echo",
 
-  "Hua_M2_音乐类.Buzzer|block": "有源蜂鸣器|引脚 %pin|值 %value",
+  "Hua_M2_음악.Buzzer|block": "능동부저|핀 %pin|값 %value",
 
-  "Hua_M2_电机类.Fan|block": "风扇|引脚 %pin|速度 %value",
-  "Hua_M2_电机类.Servo|block": "舵机|引脚 %pin|角度 %value",
+  "Hua_M2_모터.Fan|block": "회전|핀 %pin|스피드 %value",
+  "Hua_M2_모터.Servo|block": 조타수"|핀 %pin|각도 %value",
 
-  "Hua_M2_小车类.RGB_Car_Big|block": "小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3",
-  "Hua_M2_小车类.RGB_Car_Big2|block": "小车RGB探照灯|选择车灯颜色 %value",
-  "Hua_M2_小车类.Ultrasonic_Car|block": "超声波返回（cm）",
-  "Hua_M2_小车类.RGB_Car_Program|block": "七彩流水灯",
-  "Hua_M2_小车类.Music_Car|block": "小车音乐播放|%index",
-  "Hua_M2_小车类.Line_Sensor|block": "巡线传感器|位置 %direct|检测到 %value",
-  "Hua_M2_小车类.Avoid_Sensor|block": "避障传感器|位置 %direct|检测到 %value",
-  "Hua_M2_小车类.Servo_Car|block": "小车舵机|编号 %num|角度 %value",
-  "Hua_M2_小车类.CarCtrl|block": "小车控制|%index",
-  "Hua_M2_小车类.CarCtrlSpeed|block": "小车控制|%index|速度 %speed"
+  "Hua_M2_자동차.RGB_Car_Big|block": "작은RGB탐조등|빨간색 %value1|연두색 %value2|파란색 %value3",
+  "Hua_M2_자동차.RGB_Car_Big2|block": "작은RGB탐조등|램프 색 선택 %value",
+  "Hua_M2_자동차.Ultrasonic_Car|block": "초음파 복귀（cm）",
+  "Hua_M2_자동차.RGB_Car_Program|block": "7가지색의 램프",
+  "Hua_M2_자동차.Music_Car|block": "음악 플레이어|%index",
+  "Hua_M2_자동차.Line_Sensor|block": "라인 추적센서|위치 %direct|감지 %value",
+  "Hua_M2_자동차.Avoid_Sensor|block": "장애물 회피센서|위치 %direct|감지 %value",
+  "Hua_M2_자동차.Servo_Car|block": "작은바퀴각도|Number %num|각도 %value",
+  "Hua_M2_자동차.CarCtrl|block": "바퀴제어|%index",
+  "Hua_M2_자동차.CarCtrlSpeed|block": "바퀴제어|%index|스피드 %speed"
 }
