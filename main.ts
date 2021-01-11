@@ -873,7 +873,7 @@ namespace HuaRobot_M2_자동차 {
         return d / 58;
     }
 
-    //% blockId=M2_Music_Car block="Music_Car|%index"
+    //% blockId=M2_Music_Car block="소리_Car|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
