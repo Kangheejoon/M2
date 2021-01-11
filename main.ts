@@ -176,7 +176,7 @@ namespace HuaRobot_M2_센서 {
     }
     
 
-    //% blockId=M2_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=M2_Voice_Sensor block="|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -201,7 +201,7 @@ namespace HuaRobot_M2_센서 {
             control.waitMicros(13);
         }
     }
-    //% blockId=M2_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
+    //% blockId=M2_IR_Sensor block="IR_센서|pin %pin| |%value|장애물"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -231,7 +231,7 @@ namespace HuaRobot_M2_센서 {
 
     }
    
-    //% blockId=M2_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=M2_ultrasonic block="초음파|Trig %Trig|Echo %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -287,7 +287,7 @@ namespace HuaRobot_M2_입력 {
         Realse = 1
     }
 
-    //% blockId=M2_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=M2_TouchPad block="터치패드|핀 %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -347,7 +347,7 @@ namespace HuaRobot_M2_입력 {
 
     }
 
-    //% blockId=M2_Button block="Button|pin %pin|value %value"
+    //% blockId=M2_Button block="버튼|핀 %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -379,7 +379,7 @@ namespace HuaRobot_M2_음악 {
         Beep
     }
 
-    //% blockId=M2_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=M2_Buzzer block="부저|핀 %pin|value %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -401,7 +401,7 @@ namespace HuaRobot_M2_음악 {
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace HuaRobot_M2_모터 {
 
-    //% blockId=M2_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=M2_Fan block="팬|핀 %pin|speed %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -413,7 +413,7 @@ namespace HuaRobot_M2_모터 {
 
     }
 
-    //% blockId=M2_Servo block="Servo|pin %pin|value %value"
+    //% blockId=M2_Servo block="서보| %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -756,7 +756,7 @@ namespace HuaRobot_M2_자동차 {
      * *****************************************************************
      * @param index
      */
-    //% blockId=M2_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=M2_RGB_Car_Big2 block="RGB_자동차2|value %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -814,7 +814,7 @@ namespace HuaRobot_M2_자동차 {
             }
         }
     }
-    //% blockId=M2_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=M2_RGB_Car_Big block="RGB_자동차1|value1 %value1|value2 %value2|value3 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -839,7 +839,7 @@ namespace HuaRobot_M2_자동차 {
 
     }
 
-    //% blockId=M2_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=M2_RGB_Car_Program block="RGB_자동차 프로그램"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -853,7 +853,7 @@ namespace HuaRobot_M2_자동차 {
     }
 
 
-    //% blockId=M2_ultrasonic_car block="ultrasonic return distance(cm)"
+    //% blockId=M2_ultrasonic_car block="초음파 복귀 거리(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -917,7 +917,7 @@ namespace HuaRobot_M2_자동차 {
 
     }
 
-    //% blockId=M2_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
+    //% blockId=M2_Avoid_Sensor block="_센서|direct %direct|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -962,7 +962,7 @@ namespace HuaRobot_M2_자동차 {
         return temp;
 
     }
-    //% blockId=M2_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=M2_Line_Sensor block="라인_센서|direct %direct|value %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1007,7 +1007,7 @@ namespace HuaRobot_M2_자동차 {
         return temp;
 
     }
-    //% blockId=M2_CarCtrl block="CarCtrl|%index"
+    //% blockId=M2_CarCtrl block="DC모터|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1023,7 +1023,7 @@ namespace HuaRobot_M2_자동차 {
             case CarState.Car_SpinRight: Car_spinright(255); break;
         }
     }
-    //% blockId=M2_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=M2_CarCtrlSpeed block="DC모터속도|%index|속도 %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
