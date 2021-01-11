@@ -902,7 +902,7 @@ namespace HuaRobot_M2_자동차 {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=M2_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=M2_Servo_Car block="서보_Car|num %num|value %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
