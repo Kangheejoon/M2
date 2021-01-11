@@ -30,7 +30,7 @@ namespace HuaRobot_M2_표시 {
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="끄다"
+        //% blockId="OFF" block="Off"
         OFF = 0,
         //% blockId="ON" block="On"
         ON =1
