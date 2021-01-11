@@ -18,7 +18,7 @@
   "Hua_M2_음악.Buzzer|block": "능동부저|핀 %pin|값 %value",
 
   "Hua_M2_모터.Fan|block": "회전|핀 %pin|스피드 %value",
-  "Hua_M2_모터.Servo|block": 조타수"|핀 %pin|각도 %value",
+  "Hua_M2_모터.Servo|block": "조타수|핀 %pin|각도 %value",
 
   "Hua_M2_자동차.RGB_Car_Big|block": "작은RGB탐조등|빨간색 %value1|연두색 %value2|파란색 %value3",
   "Hua_M2_자동차.RGB_Car_Big2|block": "작은RGB탐조등|램프 색 선택 %value",
