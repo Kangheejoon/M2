@@ -2,32 +2,32 @@
 
   "Hua_M2_표시.LED1|block": "LED램|프 %pin|상태 %value",
   "Hua_M2_표시.LED2|block": "LED램|프 %pin|광도 %value",
-  "Hua_M2_표시.BreathLED|block": "호흡등|핀 %pin",
+  "Hua_M2_표시.숨쉬기LED|block": "호흡등|핀 %pin",
   "Hua_M2_표시.RGB|block": "RGB화려한 불빛|핀R %pin1|핀G %pin2|핀B %pin3|빨간색 %value1|연두색 %value2|파란색 %value3",
   "Hua_M2_표시.RGB2|block": "RGB화려한 불빛|핀R %pin1|핀G %pin2|핀B %pin3|표시 %value",
 
-  "Hua_M2_입력.TouchPad|block": "터치스위치|핀 %pin|반환 %value",
+  "Hua_M2_입력.터치패드|block": "터치스위치|핀 %pin|반환 %value",
   "Hua_M2_입력.Rocker|block": "원격레버|VRX %pin1|VRY %pin2|SW %pin3|반환 %value",
-  "Hua_M2_입력.Button|block": "버튼|핀 %pin|반환 %value",
+  "Hua_M2_입력.버튼|block": "버튼|핀 %pin|반환 %value",
 
-  "Hua_M2_센서.Voice_Sensor|block": "사운드 센서|핀 %pin|반환 %value",
-  "Hua_M2_센서.IR_Sensor|block": "적외선 센서|핀 %pin|  |%value|장애물",
-  "Hua_M2_센서.IR_Send|block": "적외선 방출|핀 %pin",
-  "Hua_M2_센서.Ultrasonic|block": "초음파|방출 핀 %Trig|핀 받기 %Echo",
+  "Hua_M2_센서.소리센서|block": "사운드 센서|핀 %pin|반환 %value",
+  "Hua_M2_센서.IR_센서|block": "적외선 센서|핀 %pin|  |%value|장애물",
+  "Hua_M2_센서.IR_센서|block": "적외선 방출|핀 %pin",
+  "Hua_M2_센서.초음파|block": "초음파|방출 핀 %Trig|핀 받기 %Echo",
 
-  "Hua_M2_음악.Buzzer|block": "능동부저|핀 %pin|값 %value",
+  "Hua_M2_음악.부저|block": "능동부저|핀 %pin|값 %value",
 
-  "Hua_M2_모터.Fan|block": "회전|핀 %pin|스피드 %value",
-  "Hua_M2_모터.Servo|block": "조타수|핀 %pin|각도 %value",
+  "Hua_M2_모터.팬|block": "회전|핀 %pin|스피드 %value",
+  "Hua_M2_모터.서보|block": "조타수|핀 %pin|각도 %value",
 
-  "Hua_M2_자동차.RGB_Car_Big|block": "작은RGB탐조등|빨간색 %value1|연두색 %value2|파란색 %value3",
-  "Hua_M2_자동차.RGB_Car_Big2|block": "작은RGB탐조등|램프 색 선택 %value",
-  "Hua_M2_자동차.Ultrasonic_Car|block": "초음파 복귀（cm）",
-  "Hua_M2_자동차.RGB_Car_Program|block": "7가지색의 램프",
-  "Hua_M2_자동차.Music_Car|block": "음악 플레이어|%index",
-  "Hua_M2_자동차.Line_Sensor|block": "라인 추적센서|위치 %direct|감지 %value",
-  "Hua_M2_자동차.Avoid_Sensor|block": "장애물 회피센서|위치 %direct|감지 %value",
-  "Hua_M2_자동차.Servo_Car|block": "작은바퀴각도|Number %num|각도 %value",
-  "Hua_M2_자동차.CarCtrl|block": "바퀴제어|%index",
-  "Hua_M2_자동차.CarCtrlSpeed|block": "바퀴제어|%index|스피드 %speed"
+  "Hua_M2_자동차.RGB_자동차1|block": "작은RGB탐조등|빨간색 %value1|연두색 %value2|파란색 %value3",
+  "Hua_M2_자동차.RGB_자동차2|block": "작은RGB탐조등|램프 색 선택 %value",
+  "Hua_M2_자동차.초음파|block": "초음파 복귀（cm）",
+  "Hua_M2_자동차.RGB_자동차 프로그램|block": "7가지색의 램프",
+  "Hua_M2_자동차.음악|block": "음악 플레이어|%index",
+  "Hua_M2_자동차.라인 추적센서|block": "라인 추적센서|위치 %direct|감지 %value",
+  "Hua_M2_자동차.감지센서|block": "장애물 회피센서|위치 %direct|감지 %value",
+  "Hua_M2_자동차.서보_자동차|block": "작은바퀴각도|Number %num|각도 %value",
+  "Hua_M2_자동차.바퀴 컨트롤|block": "바퀴제어|%index",
+  "Hua_M2_자동차.바퀴 컨트롤 스피드|block": "바퀴제어|%index|스피드 %speed"
 }
